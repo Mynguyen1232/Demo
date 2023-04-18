@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="js/angular.min.js"></script>
+    <link rel="stylesheet" href="css/website.css" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body ng-app="myapp" ng-controller="myctrl">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img src="img/demo-store-logo-1629363061.jpg" alt="" />
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sofas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chairs</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cabinets
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Artisan</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <div class="icon">
+                <a href="#" class="position-relative">
+                  <span class="fs-5 text-dark"
+                    ><i class="bi bi-search"></i
+                  ></span>
+                </a>
+              </div>
+              <div class="icon">
+                <a href="#" class="position-relative">
+                  <span class="fs-5 text-dark"
+                    ><i class="bi bi-heart-fill"></i
+                  ></span>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    0
+                  </span>
+                </a>
+              </div>
+              <div class="icon">
+                <a href=" #" class="position-relative">
+                  <span class="fs-5 text-dark"
+                    ><i class="bi bi-shuffle"></i
+                  ></span>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    0
+                  </span>
+                </a>
+              </div>
+              <div class="icon">
+                <a href=" #" class="position-relative">
+                  <span class="fs-5 text-dark"
+                    ><i class="bi bi-person-circle"></i
+                  ></span>
+                </a>
+              </div>
+              <div class="icon">
+                <a href="#" class="position-relative">
+                  <span class="fs-5 text-dark"
+                    ><i class="bi bi-cart3"></i
+                  ></span>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    0
+                  </span>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-md-12 home1 text-center mt-1 pt-3"
+            style="background-color: rgb(232, 232, 232)"
+          >
+            <ol>
+              <li class="list-inline-item">
+                <a class="text-decoration-none text-dark" href="#"
+                  ><span>Home</span></a
+                >
+              </li>
+              <li class="list-inline-item">
+                <span class="text-secondary">/</span>
+              </li>
+              <li class="list-inline-item">
+                <span class="text-secondary">Chests</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row pt-5">
+            <div class="card border-1 rounded-0">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h5 class="m-3">Shopping cart</h5>
+                </div>
+                <hr />
+                <div class="panel-body table-responsive">
+                  <table class="table ">
+                    <thead>
+                      <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="cart in carts" ng-init="setTotals(cart)">
+                        <td>
+                          <img
+                            src="img/{{cart.img}}"
+                            alt=""
+                            style="width: 100px"
+                          />
+                        </td>
+                        <td>{{cart.name}}</td>
+                        <td>${{cart.discount}}</td>
+                        <td><input type="number" name="" ng-model="cart.quantity" id=""></td>
+                        <td>{{cart.discount * cart.quantity}}</td>
+                        <td>
+                          <button
+                            type="button"
+                            ng-click="remove_cart(cart)"
+                            class="btn btn-danger"
+                          >
+                            X
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td align="right"><strong>Total</strong></td>
+                        <td><strong>${{total}}</strong></td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td><strong></strong></td>
+                        <td>
+                          <button type="button" class="rounded-5 btn btn-dark">
+                            Check out
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <a href="" class="text-secondary text-decoration-none"
+                ><h6><i class="bi bi-arrow-left"></i> Continue shopping</h6></a
+              >
+            </div>
+          </div>
+
+          <div class="row pt-5">
+            <h6 class="text-center text-muted fs-6">TOP CATEGORIES</h6>
+            <h1 class="mt-0 text-center">Shop By Categories</h1>
+            <h7 class="text-center mt-2"
+              >Discover our Best of Categories with Special Discount</h7
+            >
+          </div>
+          <div class="row pt-3">
+            <!-- ===================Card1============================== -->
+            <div
+              ng-repeat="product in products"
+              class="col-md-2 col-6 col-md-offset-1 p-3"
+            >
+              <div class="card product border-0 rounded-0">
+                <div class="product-img">
+                  <img src="img/{{product.img}}" class="img-fluid" />
+                  <img
+                    src="img/{{product.imghover}}"
+                    class="img-fluid rear-img"
+                    alt=""
+                  />
+                </div>
+                <span>{{product.name}}</span>
+                <div class="start-test">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <div class="text-danger" style="font-weight: 600">
+                  <del class="text-secondary">{{product.price}}</del>
+                  {{product.discount}}
+                </div>
+                <center>
+                  <button
+                    type="button"
+                    class="btn btn-dark rounded-5"
+                    ng-click="add_cart(product)"
+                  >
+                    Add to cart
+                  </button>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-md-6 col-sm-12 col-12">
+            <div class="item">
+              <img src="img/banner4.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-12 pt-1">
+            <div class="text-center">
+              <p class="text-secondary">NEWSLETTER</p>
+              <h1>Sign Up For News</h1>
+              <p>
+                Get updates about our new products and 10% discount on first
+                order.
+              </p>
+              <form>
+                <div class="mb-3 p-2">
+                  <input
+                    type="text"
+                    class="input mai"
+                    placeholder="Enter your email.."
+                  />
+                </div>
+                <button type="submit" class="fs-5 btn btn-dark rounded-5">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="pt-5">
+      <div class="myfooter1 bg-dark text-white pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>Store information</h3>
+              <ul class="list-menu">
+                <p class="m-4">
+                  <li class="li_menu">
+                    <a href="tel:%phone%"
+                      ><i class="bi bi-telephone"></i> +000123 56660</a
+                    >
+                  </li>
+                </p>
+                <p>
+                  <li class="li_menu">
+                    <a href="#"
+                      ><i class="bi bi-geo-alt-fill"></i> Demo Store United
+                      States</a
+                    >
+                  </li>
+                </p>
+                <p>
+                  <li class="li_menu">
+                    <a href="#"
+                      ><i class="bi bi-printer-fill"></i> +13235551234</a
+                    >
+                  </li>
+                </p>
+                <p>
+                  <li class="li_menu">
+                    <a href="#"
+                      ><i class="bi bi-envelope-open"></i> demo@example.com</a
+                    >
+                  </li>
+                </p>
+              </ul>
+            </div>
+
+            <div class="col-md-2">
+              <h3>Your Account</h3>
+              <ul class="list-menu">
+                <p class="m-4">
+                  <li class="li_menu"><a href=""> Personal info </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Orders </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Credit slips </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Addresses </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> My wishlists </a></li>
+                </p>
+              </ul>
+            </div>
+
+            <div class="col-md-2">
+              <h3>Products</h3>
+              <ul class="list-menu">
+                <p class="m-4">
+                  <li class="li_menu"><a href=""> Prices drop </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> New products </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Best sale </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Contact us </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Sitemap </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Stores </a></li>
+                </p>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Our Company</h3>
+              <ul class="list-menu">
+                <p class="m-4">
+                  <li class="li_menu"><a href=""> Delivery </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Legal Notice </a></li>
+                </p>
+                <p>
+                  <li class="li_menu">
+                    <a href="#"> Terms and conditions of use </a>
+                  </li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> About us </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Secure payment </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Login </a></li>
+                </p>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h3>Extra Links</h3>
+              <ul class="list-menu">
+                <p class="m-4">
+                  <li class="li_menu"><a href=""> Mobile </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Smart tv </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Computers </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Electronices </a></li>
+                </p>
+                <p>
+                  <li class="li_menu"><a href="#"> Blogs</a></li>
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="myfooter2">
+          <div class="container">
+            <div class="row">
+              <div class="pt-3 col-sm-6 text-muted text-start">
+                © 2023 - Ecommerce software by PrestaShop™
+              </div>
+              <div class="pt-3 col-sm-6 text-end">
+                <a href="#" class=" ">
+                  <img src="img/paymentlogo-01.jpg" alt="" />
+                </a>
+                <a href="#" class=" ">
+                  <img src="img/paymentlogo-02.jpg" alt="" />
+                </a>
+                <a href="#" class=" ">
+                  <img src="img/paymentlogo-03.jpg" alt="" />
+                </a>
+                <a href="#" class=" ">
+                  <img src="img/paymentlogo-04.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script>
+      var app = angular.module("myapp", []);
+      app.controller("myctrl", function ($scope) {
+        $scope.carts = [];
+        $scope.products = [
+          {
+            p_id: "1",
+            img: "1319-home_default.jpg",
+            imghover: "1308-home_default.jpg",
+            name: "Camera 555",
+            photo: "1220-home_default.jpg",
+            price: 230,
+            discount: 150,
+          },
+          {
+            p_id: "2",
+            img: "1319-home_default.jpg",
+            imghover: "1308-home_default.jpg",
+            name: "Camera 2",
+            photo: "1220-home_default.jpg",
+            price: 200,
+            discount: 100,
+          },
+          {
+            p_id: "3",
+            img: "1319-home_default.jpg",
+            imghover: "1308-home_default.jpg",
+            name: "Camera 3",
+            photo: "1220-home_default.jpg",
+            price: 130,
+            discount: 150,
+          },
+          {
+            p_id: "4",
+            img: "1319-home_default.jpg",
+            imghover: "1308-home_default.jpg",
+            name: "Camera 4",
+            photo: "1220-home_default.jpg",
+            price: 280,
+            discount: 150,
+          },
+          {
+            p_id: "5",
+            img: "1319-home_default.jpg",
+            imghover: "1308-home_default.jpg",
+            name: "Camera 5",
+            photo: "1220-home_default.jpg",
+            price: 280,
+            discount: 150,
+          },
+          {
+            p_id: "6",
+            img: "1319-home_default.jpg",
+            imghover: "1308-home_default.jpg",
+            name: "Camera 6",
+            photo: "1220-home_default.jpg",
+            price: 280,
+            discount: 150,
+          },
+        ];
+
+        $scope.add_cart = function (product) {
+          if (product) {
+            $scope.carts.push({
+              p_id: product.p_id,
+              img: product.img,
+              name: product.name,
+              discount: product.discount,
+              quantity: 1
+            });
+          }
+        };
+
+        $scope.total = 0;
+
+        $scope.setTotals = function (cart) {
+          if (cart) {
+            $scope.total += cart.discount * cart.quantity;
+          }
+        };
+
+        $scope.remove_cart = function (cart) {
+          if (cart) {
+            $scope.carts.splice($scope.carts.indexOf(cart), 1);
+            $scope.total -= cart.discount;
+          }
+        };
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
